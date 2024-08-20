@@ -36,12 +36,34 @@
     color: white;
 }
 
+.halfbox{
+    grid-template-columns: 1fr 1fr;
+}
+
+#rightimage{
+    background-image: url(./assets/38C5D1FA-1B1B-4924-AC22-4B85EE6FBD56.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 #page1{
     background-color: rgb(3,111,128);
 }
 
 #page2{
     background-color: rgb(200,111,128);
+}
+
+#page3{
+    background-color: rgb(200,111,128);
+    grid-template-columns: 4fr 2fr 1fr;
+}
+
+#page3 div{
+    width: 100%;
+    height: 100%;
 }
 
 h1{

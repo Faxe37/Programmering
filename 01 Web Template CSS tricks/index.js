@@ -1,7 +1,8 @@
 //alert('hej Elias')
 
-let currentPage = 1
+let currentPage = 3
 let pages //array med alle elementer med class = page
+let colors = ["blue","turqoise","purple","grey","cyan","hotpink"]
 
 function setup(){
     pages = selectAll('.page')
@@ -9,6 +10,13 @@ function setup(){
     //console.log(pages.length)
     select('#page' + currentPage).addClass('visible')
 
+    //lav en masse div'er vi kommer ind i page 3
+    for(c of colors){
+        //console.log(c)
+        let div = createDiv()
+        div.style('background-color', c)
+        select('#page3').child(div)
+    }
 }
 
 function shiftPage(num){
