@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    z-index: 2;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menuitem{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    border-right: 1px solid black; 
+    cursor: pointer;
+    transform: 0.3s all ease-in-out;
+}
+
+.menuitem:hover{
+    border-bottom: 6px solid rgb(112, 5, 5);
+    font-size: 2.4rem;
+}
+
+.page{
+    position: fixed;
+    left:-100vw;
+    width: 100vw;
+    height: 88vh;
+    top:12vh;
+    overflow: hidden;
+    display:grid;
+    place-items:center;
+    transition: 0.6s all ease-in-out;
+}
+
+.pagefront{
+    position: fixed;
+    left:-100vw;
+    width: 100vw;
+    height: 88vh;
+    top:12vh;
+    overflow: auto;
+    place-items:center;
+    transition: 0.45s all ease-in-out;
+}
+
+
+.box{
+    background-color: whitesmoke;
+    position: absolute;
+    width: 420px;
+    height: 565px;
+    left: 4rem;
+    top: 4rem;
+    bottom: 4rem;
+}
+
+.box2{
+    background-color: rgb(51, 14, 172);
+    position: absolute;
+    width: 63.5%;
+    height: 565px;
+    right: 4rem;
+    top: 4rem;
+    bottom: 4rem;
+}
+
+.box3{
+    background-color: rgb(51, 14, 172);
+    position: absolute;
+    width: 63.5%;
+    height: 565px;
+    right: 4rem;
+    top: 4rem;
+    bottom: 4rem;
+}
+
+
+.fixed{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-variant: small-caps;
+    text-shadow: 12px 12px 4px black;
+}
+
+.visible{
+    left:0;
+    transition: 0.45s all ease-in-out;
+}
+
+#text{
+    margin: 13px;
+    font-size:2.4vh;
+}
+
+#dgimage{
+    background-image: url(./assets/Death_grips_2014.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#titleimage{
+    background-image: url(./assets/mmord7z49xr01-removebg-preview.png);
+    width: 400px;
+    height: 120px;
+    margin: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-family: Radio Canada Big;
+    color: rgb(79, 1, 99);
+}
+
+#stefantext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vh;
+    margin: 13px;
+    text-align: center;
+}
+
+#stefanimage{
+    background-image: url(./assets/91ba907b.webp);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#page1{
+    background-image: url(./assets/rough-grunge-background-texture_508630-1217.jpg );
+}
+
+#page2{
+    background-image: url(./assets/rough-grunge-background-texture_508630-1217.jpg );
+
+}
+
+#page3{
+    background-color: rgb(200,111,128);
+}
+
+#page4{
+    background-color: rgb(200,111,128);
+}

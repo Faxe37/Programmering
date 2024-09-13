@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    z-index: 2;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menuitem{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    border-right: 1px solid black;
+    cursor: pointer;
+    transform: 0.3s all ease-in-out;
+}
+
+.menuitem:hover{
+    border-bottom: 6px solid black;
+    font-size: 2.4rem;
+}
+
+.menuitem.active{
+    border-bottom: 6px solid red;
+}
+
+.page{
+    position: fixed;
+    left:-100vw;
+    width: 100vw;
+    height: 88vh;
+    top:12vh;
+    overflow: hidden;
+    display:grid;
+    place-items:center;
+    transition: 0.6s all ease-in-out;
+}
+
+.visible{
+    left:0;
+    transition: 0.6s all ease-in-out;
+}
+
+.box{
+    width:80%;
+    height: 80%;
+    display:grid;
+    place-items:center;
+    border: 1px solid white;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.fixed{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-variant: small-caps;
+    text-shadow: 12px 12px 4px black;
+}
+
+#imagebox{
+    background-image: url(./assets/avatars-HCMqtND4BWnc4lr7-9kMrpA-t500x500.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.halfbox{
+    grid-template-columns: 1fr 1fr;
+}
+
+#rightimage{
+    background-image: url(./assets/38C5D1FA-1B1B-4924-AC22-4B85EE6FBD56.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#page1{
+    background-color: rgb(3,111,128);
+}
+
+#page2{
+    background-color: rgb(200,111,128);
+}
+
+#page3{
+    background-image:url(./assets/38C5D1FA-1B1B-4924-AC22-4B85EE6FBD56.jpeg);
+    grid-template-columns: 4fr 2fr 1fr;
+}
+
+#page4{
+    background-color: rgb(200,111,128);
+}
+
+#page3 div{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: Radio Canada Big;
+    color: rgb(79, 1, 99);
+}
